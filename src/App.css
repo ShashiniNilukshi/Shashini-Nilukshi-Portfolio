@@ -619,3 +619,93 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+/* Experience.css */
+.experience-section {
+  background: linear-gradient(to right, rgba(0, 15, 2, 0.5) -5.91%, rgba(1, 48, 19, 0.5) 111.58%);
+  padding: 4rem 1rem;
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.experience-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.experience-card:hover {
+  transform: scale(1.02);
+}
+
+.experience-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-card-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.experience-date {
+  color: #4ade80;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.experience-company {
+  margin-bottom: 1rem;
+}
+
+.experience-company span {
+  color: #4ade80;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.experience-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .experience-card-header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .experience-card-title {
+      font-size: 1.5rem;
+  }
+
+  .experience-description {
+      font-size: 1rem;
+  }
+}
